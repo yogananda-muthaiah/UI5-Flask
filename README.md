@@ -7,3 +7,11 @@ Demo of SAP UI5 - Flask
 
 Reference UI5 Documentation
 * https://ui5.sap.com
+
+
+### Deployment Steps to SAP BTP
+
+```
+cf login --sso
+cf push
+```
