@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 import requests
+import os
 
 app = Flask(__name__)
+port = int(os.getenv("PORT", 0))
 
 @app.route('/')
 def index():
@@ -30,5 +32,9 @@ def generate_api_results():
         # Handle request errors
         return jsonify({"error": str(e)}), 500
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    if port != 0:
+        app.run(host='0.0.0.0', port=port)
+    else:
+        app.run()  
