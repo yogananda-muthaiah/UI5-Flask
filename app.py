@@ -11,7 +11,7 @@ def index():
      """
      fine
      """
-    return render_template('index.html')
+     return render_template('index.html')
 
 @app.route('/generate_api_results', methods=['POST'])
 def generate_api_results():
