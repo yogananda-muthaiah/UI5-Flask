@@ -8,12 +8,16 @@ port = int(os.getenv("PORT", 0))
 
 @app.route('/')
 def index():
-    ### Fine ##
+     """
+     fine
+     """
     return render_template('index.html')
 
 @app.route('/generate_api_results', methods=['POST'])
 def generate_api_results():
-    ### Fine ##
+     """
+     fine
+     """
     # Get values from the request
     input1 = request.form.get('input1')
     input2 = request.form.get('input2')
