@@ -15,9 +15,9 @@ def index():
 
 @app.route('/generate_api_results', methods=['POST'])
 def generate_api_results():
-     """
-     fine
-     """
+    """
+    fine
+    """
     # Get values from the request
     input1 = request.form.get('input1')
     input2 = request.form.get('input2')
